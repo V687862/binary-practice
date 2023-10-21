@@ -3,7 +3,11 @@
 /******************************************************************************/
 
 const convertToBase2 = element => {
-  // Your code here 
+    if (typeof element === 'string' && element.startsWith('0x')) {
+      element = parseInt(element, 16);
+    }
+  
+    return '0b' + element.toString(2);
 };
 
 /******************************************************************************/
