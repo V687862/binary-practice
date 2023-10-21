@@ -4,6 +4,12 @@
 
 const convertToBase16 = element => {
   // Your code here 
+  if(typeof element === "string"  && element.startsWith("0b")) {
+    // let binary = element.slice(2)
+    return element.toString(16);
+  } else if (typeof element === "number") {
+    return element.toString(16);
+  } 
 };
 
 /******************************************************************************/

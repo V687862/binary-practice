@@ -23,6 +23,11 @@ const binaryStringToArray = str => {
 
 const binaryToAscii = str => {
   // Your code here 
+  let decVal = parseInt(str, 2)
+  let asciiVal = String.fromCharCode(decVal)
+  // OR
+  // let binaryArr = binaryStringToArray(str)
+  // console.log(binaryArr)
 };
 
 /******************************************************************************/
